@@ -1,0 +1,23 @@
+{% extends 'store/base.html' %}
+{% block content %}
+<h2>Risultati della ricerca</h2>
+
+{% if products %}
+    <div class="row">
+        {% for product in products %}
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.name }}</h5>
+                    <p class="card-text">Prezzo: €{{ product.price }}</p>
+                    <a href="{% url 'add-to-cart' product.id %}" class="btn btn-primary">Aggiungi al carrello</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <p>Nessun prodotto trovato.</p>
+{% endif %}
+
+{% endblock %}

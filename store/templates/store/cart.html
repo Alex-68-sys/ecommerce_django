@@ -1,0 +1,18 @@
+{% extends 'store/base.html' %}
+{% block title %}Carrello{% endblock %}
+{% block content %}
+<h2>Il tuo carrello</h2>
+{% if order and order.items.all %}
+<ul class="list-group mb-3">
+  {% for item in order.items.all %}
+    <li class="list-group-item d-flex justify-content-between">
+      {{ item.product.name }} × {{ item.quantity }}
+      <span class="text-muted">€{{ item.product.price }}</span>
+    </li>
+  {% endfor %}
+</ul>
+<a href="{% url 'confirm-order' %}" class="btn btn-success">Conferma ordine</a>
+{% else %}
+<p>Carrello vuoto.</p>
+{% endif %}
+{% endblock %}
