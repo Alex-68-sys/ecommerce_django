@@ -93,7 +93,7 @@ WSGI_APPLICATION = 'ecommerce_project.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.getenv('DATABASE_URL'),  # <- usato su Railway
+        default=os.getenv('DATABASE_URL'), 
         conn_max_age=600,
         conn_health_checks=True
     )
