@@ -144,7 +144,10 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['ecommercedjango-production-ec6e.up.railway.app',
+    'localhost',
+    '127.0.0.1'
+    ]
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
