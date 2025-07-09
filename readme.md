@@ -48,3 +48,5 @@ user: utente con password Segreto1234
 ### Login
 ![Login](screenshots/login.png)
 
+N.B.: il progetto è stato portato su railway con conseguenti modifiche per adattarlo alla piattaforma (database Postgres, ecc.)
+il progetto è visibile all'indirizzo: https://ecommercedjango-production-ec6e.up.railway.app/
