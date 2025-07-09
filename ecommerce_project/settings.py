@@ -148,6 +148,7 @@ ALLOWED_HOSTS = ['*']
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
+CSRF_TRUSTED_ORIGINS = ['https://ecommercedjango-production-ec6e.up.railway.app']
 
 
 
