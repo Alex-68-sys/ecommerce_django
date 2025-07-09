@@ -9,5 +9,3 @@ __pycache__/
 # Migrations
 !*/migrations/__init__.py
 
-# Static files
-staticfiles/
